@@ -1,0 +1,28 @@
+name: 使用反馈 / Feedback
+description: 用了这只蕾塞宠物？说说效果怎么样，或者报个问题
+title: "[反馈] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: 反馈类型
+      options:
+        - 效果不错，想提个建议
+        - 动作/贴图有问题
+        - 装不上 / 不显示
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 使用的版本
+      placeholder: 例如 v1.1.0
+  - type: textarea
+    id: details
+    attributes:
+      label: 具体说说
+      description: 发生了什么？期望是什么？能贴张截图更好
+    validations:
+      required: true
